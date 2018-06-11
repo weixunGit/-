@@ -1,0 +1,58 @@
+/* pages/HistoryData/HistoryData.wxss */
+
+.scroll-view-item {
+  margin-top: 40rpx;
+  width: 100%;
+  height: 110px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.noRecord {
+  display: flex;
+  justify-content: center;
+  margin-top: 65%;
+  line-height: 35px;
+  /* background-color: #555; */
+}
+
+.imgText {
+  width: 90%;
+  margin-left: 8%;
+  height: 30px;
+  margin-top: 35rpx;
+}
+
+.imgText_text {
+  font-size: 20px;
+  color: #555;
+  font-family: Helvetica;
+  float: right;
+  margin-top: 10rpx;
+  margin-right: 10px;
+}
+
+.header {
+  margin: 0 200rpx;
+}
+
+.bottom {
+  /* margin: 0 200rpx; */
+  text-align: center;
+}
+
+.Image {
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+
+.noRecord_image {
+  width: 35px;
+  height: 35px;
+}
+
+.noRecord_text {
+  color: #555;
+  margin-left: 20rpx;
+}

@@ -1,0 +1,27 @@
+<view wx:if="{{ExitRecord}}">
+  <view class="header" hidden="{{hideHeader}}">
+    <view>下拉刷新中……</view>
+    <view>{{refreshTime}}</view>
+  </view>
+  <scroll-view scroll-y style="height:{{windowHeight}}">
+    <view class="scroll-view-item " wx:for="{{record}}">
+      <view class='imgText'>
+         <image class="Image" src="../images/Rlocation.png"></image>
+        <text class='imgText_text' type='text'>{{item[0]}}\n</text> 
+      </view>
+      <view class='imgText'>
+         <image class="Image" src="../images/Rtime.png"></image>
+        <text class='imgText_text' type='text'>{{item[1]}}</text> 
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="bottom" hidden="{{hideBottom}}">
+    <view>{{loadMoreData}}</view>
+  </view>
+</view>
+
+<view class='noRecord' wx:else>
+  <image class='noRecord_image' src='../images/record.png'></image>
+  <text class='noRecord_text'>暂时没有记录 . . .</text>
+</view>
