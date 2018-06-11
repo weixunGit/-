@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/Passwordlogin/login",
+    "pages/personal/personal",
+    "pages/index/index",
+    "pages/register/register",
+    "pages/address/address",
+    "pages/HistoryData/HistoryData",
+    "pages/About/About",
+    "pages/ChangePassword/ChangePassword",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#10DDC2",
+    "navigationBarTitleText": "小蓝随行",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/main.png",
+        "selectedIconPath": "pages/images/main1.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "pages/images/user.png",
+        "selectedIconPath": "pages/images/user1.png"
+      }
+    ]
+  }
+}
