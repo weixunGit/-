@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="search_view">
+    <input class='input1' placeholder="{{desAddress}}" bindfocus='chooseAddress' />
+    <button class='button1' bindtap="getDistance">确定</button>
+  </view>
+     <map id="myMap" latitude="{{lookLatitude}}" longitude="{{lookLongitude}}" scale="{{scale}}" markers="{{markers}}" controls="{{controls}}" polyline="{{polyline}}" bindcontroltap="controltap" show-location style="height:{{mapHeight}}px">
+    </map> 
+
+</view>
+<!-- <button id="0" type="primary" bindtap="listenerBtnGetLocation">定位当前位置并打开内置地图</button> -->
+<view class='message' wx:if="{{message}}">
+
+  <text>{{time}}分钟\t</text>
+  <text>{{distance/1000}}公里</text>
+
+</view>
