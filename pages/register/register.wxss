@@ -1,0 +1,12 @@
+.container-hang {  
+    display: flex;  
+    flex-direction: row;  
+    background-color: #fff;   
+    border-top: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
+}  
+
+.passCue{
+  color: red;
+  margin-left: 10px;
+}
