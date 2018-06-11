@@ -1,0 +1,56 @@
+<view class='aboard_container'>
+  <span class='aboard_span'>
+    <span style="font-size:18px;color: #333;">上车点：</span>{{aboardDestination}}</span>
+  <button class='button1' bindtap="getAddress">确定</button>
+</view>
+
+<view class='container'>
+  <view class='titleView' style="height:{{WestTitleViewStyle}}">
+    <view class='chooseTitle' bindtap='showAddress' id='west'>
+      <text>中山大学南方学院西区\n</text>
+    </view>
+    <scroll-view scroll-y class='content'>
+    <view class='addressView' wx:for="{{westAddress}}" style='opacity:{{WestAddressViewOpacity}}' catchtap='{{WestchangeChooseBind}}' id='westIcon' data-index="{{index}}">
+      {{item.name}}
+      <view class='icon_view' style="opacity:{{item.checked}}">
+        <icon type='{{iconType}}' size='20' color='#088DE7'></icon>
+      </view>
+    </view>
+    </scroll-view>
+  </view>
+</view>
+
+
+
+<view class='container'>
+  <view class='titleView' style="height:{{MidTitleViewStyle}}">
+    <view class='chooseTitle' bindtap='showAddress' id='mid'>
+      <text>中山大学南方学院中区\n</text>
+    </view>
+    <scroll-view scroll-y class='content'>
+    <view class='addressView' wx:for="{{midAddress}}" style='opacity:{{MidAddressViewOpacity}}' catchtap='{{MidchangeChooseBind}}' id='midIcon' data-index="{{index}}">
+      {{item.name}}
+      <view class='icon_view' style="opacity:{{item.checked}}">
+        <icon type='{{iconType}}' size='20' color='#088DE7'></icon>
+      </view>
+    </view>
+    </scroll-view>
+  </view>
+</view>
+
+
+<view class='container'>
+  <view class='titleView' style="height:{{EastTitleViewStyle}}">
+    <view class='chooseTitle' bindtap='showAddress' id='east'>
+      <text>中山大学南方学院东区\n</text>
+    </view>
+    <scroll-view scroll-y class='content'>
+    <view class='addressView' wx:for="{{eastAddress}}" style='opacity:{{EastAddressViewOpacity}}' catchtap='{{EastchangeChooseBind}}' id='eastIcon' data-index="{{index}}">
+      {{item.name}}
+      <view class='icon_view' style="opacity:{{item.checked}}">
+        <icon type='{{iconType}}' size='20' color='#088DE7'></icon>
+      </view>
+    </view>
+    </scroll-view>
+  </view>
+</view>
